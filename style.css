@@ -529,6 +529,25 @@ form button:hover {
     outline: none;
 }
 
+.textin textarea {
+    height: 10rem;
+    width: 20.5rem;
+    padding: 1rem;
+    resize: none; /* Opcional: desativar a redimensionamento da área de texto */
+    overflow-wrap: break-word; /* Faz o texto quebrar quando não couber na largura */
+    border: 2px solid #47166B;
+    border-radius: 10px;
+
+    font-family: 'lato';
+}
+
+.textin textarea:focus {
+    font-family: 'lato';
+    font-size: 1.5rem;
+
+    outline: #200136;
+}
+
 @media (min-width: 700px) {
     * {
         margin: 0;
@@ -1110,4 +1129,24 @@ form button:hover {
     .inpu input:focus {
         outline: none;
     }
+
+    .textin textarea {
+        height: 10rem;
+        width: 31rem;
+        padding: 1rem;
+        resize: none; /* Opcional: desativar a redimensionamento da área de texto */
+        overflow-wrap: break-word; /* Faz o texto quebrar quando não couber na largura */
+        border: 2px solid #47166B;
+        border-radius: 10px;
+
+        font-family: 'lato';
+    }
+
+    .textin textarea:focus {
+        font-family: 'lato';
+        font-size: 1.5rem;
+
+        outline: #200136;
+    }
+   
 }
