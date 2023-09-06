@@ -130,7 +130,7 @@ nav img {
 }
 
 #button a:hover {
-    color: #AE1759;
+    color: #ffcc32;
     background-color: #fff;
 }
 
@@ -678,7 +678,7 @@ form button:hover {
     }
     
     #button a:hover {
-        color: #AE1759;
+        color: #ffcc32;
         background-color: #fff;
         transform: scale(1.1);
     }
