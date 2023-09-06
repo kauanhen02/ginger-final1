@@ -31,7 +31,8 @@ body {
 }
 
 nav {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(30px);
 
     width: 100vw;
     height: clamp(2rem, 7rem, 10rem);
@@ -44,7 +45,7 @@ nav {
 }
 
 a {
-    color: #f15a29;
+    color: #ffcc32;
     font-family: Poppins;
     font-size: clamp(1rem, 1.5rem, 3rem);
     font-style: normal;
@@ -557,8 +558,8 @@ form button:hover {
         background-repeat: no-repeat;
     }
     nav {
-        background: rgba(151, 149, 149, 0.45);
-        backdrop-filter: blur(5px);
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(30px);
     
         width: 100vw;
         height: clamp(5rem, 9rem, 10rem);
@@ -571,7 +572,7 @@ form button:hover {
     }
     
     a {
-        color: #f15a29;
+        color: #ffcc32;
         font-family: Poppins;
         font-size: clamp(1rem, 1.8rem, 3rem);
         font-style: normal;
