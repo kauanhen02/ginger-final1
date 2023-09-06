@@ -31,9 +31,7 @@ body {
 }
 
 nav {
-    background: rgba(151, 149, 149, 0.45);
-     backdrop-filter: blur(5px);
-    
+    background: rgba(255, 255, 255, 0.6);
 
     width: 100vw;
     height: clamp(2rem, 7rem, 10rem);
@@ -48,7 +46,7 @@ nav {
 a {
     color: #f15a29;
     font-family: Poppins;
-    font-size: clamp(.5rem, 1.5rem, 6rem);
+    font-size: clamp(1rem, 1.5rem, 3rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -209,7 +207,7 @@ nav img {
 .port a {
     color: #fff;
     font-family: Poppins;
-    font-size: clamp(.5rem, 1.5rem, 6rem);
+    font-size: clamp(1rem, 1.5rem, 3rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -473,7 +471,7 @@ form button:hover {
 .contato a {
     color: #fff;
     font-family: Poppins;
-    font-size: clamp(.5rem, 1.5rem, 6rem);
+    font-size: clamp(1rem, 1.5rem, 3rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -725,7 +723,7 @@ form button:hover {
     .port a {
         color: #fff;
         font-family: Poppins;
-        font-size: clamp(1rem, 1.5rem, 3rem);
+        font-size: clamp(1rem, 1.8rem, 3rem);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -912,7 +910,7 @@ form button:hover {
     .contato a {
         color: #fff;
         font-family: Poppins;
-        font-size: clamp(1rem, 1.5rem, 3rem);
+        font-size: clamp(1rem, 1.8rem, 3rem);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
