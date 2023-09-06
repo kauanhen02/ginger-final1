@@ -4,6 +4,7 @@ const router = new Router()
 router.add('/', "/pages/home.html")
 router.add("/portifolio", "/pages/portifolio.html")
 router.add("/contact", "/pages/contact.html")
+router.add(404, "/pages/home.html")
 
 router.handle()
 
