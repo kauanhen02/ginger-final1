@@ -188,8 +188,8 @@ nav img {
 }
 
 .port nav img {
-    width: clamp(3.5rem, 13rem, 16rem);
-    height: clamp(3.5rem, 6rem, 10rem);
+    width: 13rem;
+    height: 13rem;
     padding: 0;
 }
 
@@ -452,8 +452,8 @@ form button:hover {
 }
 
 .contato nav img {
-    width: clamp(3.5rem, 13rem, 16rem);
-    height: clamp(3.5rem, 6rem, 10rem);
+    width: 13rem;
+    height: 13rem;
     padding: 0;
 }
 
@@ -1056,6 +1056,11 @@ form button:hover {
         width: 60rem;
         align-items: center;
 
+    }
+
+    #texto p {
+        font-size: clamp(.5rem, 1.2rem, 3rem);
+        font-weight: 600;
     }
     
     form {
