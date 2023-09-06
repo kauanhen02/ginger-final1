@@ -703,8 +703,8 @@ form button:hover {
     }
     
     .port nav img {
-        width: clamp(15rem, 22rem, 25rem);
-        height: clamp(3.5rem, 10rem, 10rem);
+        width: 22rem;
+        height: 22rem;
         padding: 0;
     }
     
@@ -889,8 +889,8 @@ form button:hover {
     }
     
     .contato nav img {
-        width: clamp(15rem, 22rem, 25rem);
-        height: clamp(3.5rem, 10rem, 10rem);
+        width: 22rem;
+        height: 22rem;
         padding: 0;
     }
     
