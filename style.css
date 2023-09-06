@@ -1047,20 +1047,18 @@ form button:hover {
         background: linear-gradient(90deg, #26063d 100%, #26063d 100%);
     }
 
-
-
     #texto {
-        padding: 3.7rem 0 0 6rem;
+        margin-top: 5rem;
+        margin-left: 6.5rem;
+    }
 
-        display: flex;
-        width: 60rem;
-        align-items: center;
-
+    #texto .hr {
+        width: 30rem;
+        transform: rotate(0);
     }
 
     #texto p {
-        font-size: clamp(.5rem, 1.2rem, 3rem);
-        font-weight: 600;
+        font-size: 1.3rem;
     }
     
     form {
