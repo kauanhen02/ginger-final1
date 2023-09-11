@@ -1,58 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <script>
-      // Função para lidar com o redirecionamento
-      function route() {
-          alert('Você clicou em um link!'); // Exemplo de ação, personalize conforme necessário.
-      }
-  </script>
+<title>Contato</title>
+<div class="contato">
 
-  <script src="/js/formulario.js"></script>
-</head>
-<body>
-    <div class="contato">
-        <nav>
-            <img src="/img/ginger-removebg-preview.png" alt="">
-            <a href="/" onclick="route()">Home</a>
-            <a href="/portifolio" onclick="route()">Portfólio</a>
-            <a href="/contact" onclick="route()">Contato</a>
-            <a href="/esg" onclick="route()"></a>
-        </nav>
-        <div id="conta">
-            <div id="texto">
-                <h1>Entre em Contato</h1>
-                <div class="hr"></div>
-                <p>Deixe seu contato conosco e um de nossos especialistas entrará em contato para ajudá-lo:</p>
-            </div>
+  <nav>
+    <img src="/img/ginger-removebg-preview.png" alt="">
+    <a href="/" onclick="route()">Home</a>
+    <a href="/portifolio" onclick="route()">Portifólio</a>
+    <a href="/contact" onclick="route()">Contato</a>
+    <a href="/esg" onclick="route()"></a>
+  </nav>
+  <div id="conta">
 
-            <form action="/enviar" method="POST">
-                <div class="inpu">
-                    <input type="text" name="Nome" placeholder="Nome">
-                </div>
-                <div class="inpu">
-                    <input type="text" name="Empresa" placeholder="Empresa">
-                </div>
-                <div class="inpu">
-                    <input type="text" name="CNPJ" placeholder="CNPJ">
-                </div>
-                <div class="inpu">
-                    <input type="email" name="Email" placeholder="E-mail">
-                </div>
-                <div class="inpu">
-                    <input type="tel" name="Telefone" placeholder="Telefone">
-                </div>
-                <div class="textin">
-                    <textarea name="Solicitacao" placeholder="Solicite Aqui!"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
-</html>
+    <div id="texto">
+<h1>Entre em Contato
+</h1>
+<div class="hr"></div>
+<p>Deixe seu contato com a gente que um de 
+  nossos especialistas entrará em contato para ajudá-lo:</p>
+</div>
+
+<form action="https://getform.io/f/5f5fffb3-3d89-410b-8d39-c089cf38cb6a" method="POST">
+  <div class="inpu">
+    <input type="text" name="Nome" placeholder="Nome">
+  </div>
+
+  <div class="inpu" name="">
+    <input type="text" name="Empresa" placeholder="Empresa">
+  </div>
+  
+  <div class="inpu">
+    <input type="nu" name="CNPJ" placeholder="CNPJ">
+  </div>
+
+  <div class="inpu">
+    <input type="email" name="Email" placeholder="E-mail">
+  </div>
+
+  <div class="inpu">
+    <input type="tel" name="tell" placeholder="Telefone" >
+  </div>
+
+  <div class="textin">
+    <textarea name="Solicitação" placeholder="Solicite Aqui!"></textarea>
+</div>
+
+
+  <div>
+    <button>Enviar</button>
+  </div>
+</form>
+</div>
