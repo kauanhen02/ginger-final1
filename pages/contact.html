@@ -6,7 +6,7 @@
     <a href="/" onclick="route()">Home</a>
     <a href="/portifolio" onclick="route()">Portifólio</a>
     <a href="/contact" onclick="route()">Contato</a>
-    <a href=404 onclick="route()"></a>
+    <a href="/esg" onclick="route()"></a>
   </nav>
   <div id="conta">
 
@@ -28,8 +28,8 @@
   </div>
   
   <div class="inpu">
-    <input type="nu" name="CNPJ" placeholder="CNPJ">
-  </div>
+    <input type="text" id="cnpjInput" name="CNPJ" placeholder="CNPJ">
+</div>
 
   <div class="inpu">
     <input type="email" name="Email" placeholder="E-mail">
@@ -47,5 +47,24 @@
   <div>
     <button>Enviar</button>
   </div>
+
+  
 </form>
 </div>
+
+<script>
+  const cnpjInput = document.getElementById('cnpjInput');
+
+  cnpjInput.addEventListener('input', function () {
+      // Remove todos os caracteres não numéricos
+      let cnpj = cnpjInput.value.replace(/\D/g, '');
+
+      // Formata o CNPJ
+      if (cnpj.length <= 12) {
+          cnpj = cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{4})/, '$1.$2.$3/$4');
+      } else {
+          cnpj = cnpj.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, '$1.$2.$3/$4-$5');
+      }
+
+      cnpjInput.value = cnpj;
+  });
