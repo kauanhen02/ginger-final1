@@ -18,7 +18,7 @@ app.post('/enviar', (req, res) => {
 
   // Configurar o transporte do Nodemailer
   const transporter = nodemailer.createTransport({
-    service: 'outlook',
+    service: 'outlook365',
     auth: {
       user: 'kauansjx31@outlook.com',
       pass: '@596378Ka',
