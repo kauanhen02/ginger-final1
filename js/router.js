@@ -1,27 +1,60 @@
 export class Router {
-  routes = {} 
+  constructor() {
+    this.routes = {};
+    this.handle = this.handle.bind(this);
+  }
 
   add(routeName, page) {
-    this.routes[routeName] = page
+    this.routes[routeName] = page;
   }
-  
+
   route(event) {
-    event = event || window.event
-    event.preventDefault()
+    event = event || window.event;
+    event.preventDefault();
 
-    window.history.pushState({}, "", event.target.href)
+    const target = event.target;
+    const route = target.getAttribute('href');
 
-    this.handle()
+    // Update the URL without triggering a page reload
+    window.history.pushState({}, '', route);
+
+    // Handle the route change
+    this.handle();
   }
 
   handle() {
-    const { pathname }  = window.location
-    const route = this.routes[pathname] || this.routes[404]
-    fetch(route)
-    .then(data => data.text())
-    .then(html => {
-      document.querySelector('#app').innerHTML = html
-    })
-  }
+    const { pathname } = window.location;
+    const route = this.routes[pathname] || '404.html';
 
+    // Fetch the page content
+    fetch(route)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then((html) => {
+        document.querySelector('#app').innerHTML = html;
+      })
+      .catch((error) => console.error('Error fetching page:', error));
+  }
 }
+
+// Example usage
+const router = new Router();
+router.add('/', 'home.html');
+router.add('/about', 'about.html');
+router.add('404', '404.html');
+
+// Initial route handling
+window.addEventListener('load', () => router.handle());
+
+// Handle navigation
+document.addEventListener('click', (event) => {
+  const target = event.target;
+  if (target.tagName === 'A' && target.getAttribute('href')) {
+    event.preventDefault();
+    router.route(event);
+  }
+});
