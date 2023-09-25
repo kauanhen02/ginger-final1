@@ -2,6 +2,7 @@ export class Router {
   constructor() {
     this.routes = {};
     this.handle = this.handle.bind(this);
+    window.addEventListener('popstate', this.handle);
   }
 
   add(routeName, page) {
