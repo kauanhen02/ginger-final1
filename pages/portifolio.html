@@ -1,28 +1,28 @@
-<title>Potifólio</title>
-<div class="port">
-    <nav>
-        <img src="/img/ginger-removebg-preview.png" alt="">
-        <a href="/" onclick="route()">Home</a>
-        <a href="/portifolio" onclick="route()">Portifólio</a>
-        <a href="/contact" onclick="route()">Contato</a>
-        <a href="404" onclick="route()"></a>
-    </nav>
-    <div id="text">
-
-        <h2>Tudo Que Temos Para Fragrâncias</h2>
-        <div class="hr"></div>
-        <p>Matérias-primas de alta qualidade são o segredo para fragrâncias incríveis.
-            Elas garantem que seu perfume ou aroma dure mais e seja mais agradável. Escolher as melhores matérias-primas é a chave para
-            criar fragrâncias memoráveis.</p>
-    </div>
-
-    <!-- Formulário de pesquisa -->
-    <div class="form">
-        <button type="button" id="botaoItem" onclick="pesquisarItem()">Pesquisar</button>
-        <input type="text" id="pesquisaItem" placeholder="Nome do produto, CAS" onkeyup="verificarCampoPesquisa(event)">
-    </div>
-
-<div class="lista-rolavel" id="lista-rolavel">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Lista Rolável</title>
+  <style>
+    /* Estilize conforme necessário */
+    .lista-rolavel {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .lista-rolavel table {
+      width: 100%;
+    }
+    .lista-rolavel table td {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="lista-rolavel" id="lista-rolavel">
     <table>
         <tbody>
             <tr>
@@ -171,17 +171,5 @@
     
 </div>
 
-
-    <!-- Resultado da pesquisa -->
-    <div id="resultadoPesquisa">
-    </div>
-</div>
-
-<script>
-    jQuery(document.body).on('keypress', '#myForm', function (e) {
-    if (e.keyCode === 13) {
-        e.preventDefault();
-        $("#botaoItem").trigger("click");
-    }
-});
-</script>
+</body>
+</html>
